@@ -29,7 +29,7 @@ export default function ProjectList() {
       {
         title: "Assembly: Endgame",
         link: "https://darling-souffle-09ab2b.netlify.app",
-        img: "/image/Guessing Game.jpg",
+        img: "/image/assembly-endgame.jpg",
         alt: "Assembly Endgame Screenshot",
       },
     ],
@@ -38,7 +38,7 @@ export default function ProjectList() {
       {
         title: "Automation & Scripting",
         link: "https://github.com/yapisango",
-        img: "/image/Automation and Scripting.jpg",
+        img: "/image/automation-scripting.jpg",
         alt: "Automation scripting project screenshot",
       },
       {
@@ -49,10 +49,10 @@ export default function ProjectList() {
       },
       
       {
-        title: "Guessin Game",
+        title: "Travel Journal",
         link: "https://ubiquitous-dango-fdacdf.netlify.app",
-        img: "/image/Rectangle 84.png",
-        alt: "Guessin Game Screenshot",
+        img: "/image/rectangle-84.png",
+        alt: "Travel Journal Screenshot",
       },
     ],
 
@@ -82,7 +82,7 @@ export default function ProjectList() {
       {
         title: "Shortest Path Algorithm (BFS)",
         link: "https://github.com/yapisango/shortest-path-algorithm.git",
-        img: "/image/Shortest Path BFS.png",
+        img: "/image/shortest-path-bfs.png",
         alt: "Graph shortest path algorithm project screenshot",
       },
     ],

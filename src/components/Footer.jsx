@@ -23,7 +23,7 @@ export default function Footer() {
           </li>
           <li>
             <a href="https://www.facebook.com/sango.yapi">
-              <img src="/image/Facebook.png" alt="Facebook Icon" />
+              <img src="/image/facebook.png" alt="Facebook Icon" />
             </a>
           </li>
         </ul>

@@ -14,7 +14,7 @@ function Services() {
         {/* Web Development */}
         <div className="service-card">
           <img
-            src="/image/Web Development.jpg"
+            src="/image/web-development.jpg"
             alt="Web Development"
             className="service-img"
           />
@@ -33,7 +33,7 @@ function Services() {
         {/* Software Development */}
         <div className="service-card">
           <img
-            src="/image/Software Development1.avif"
+            src="/image/software-development1.avif"
             alt="Software Development"
             className="service-img"
           />
@@ -52,7 +52,7 @@ function Services() {
         {/* Mobile App Development */}
         <div className="service-card">
           <img
-            src="/image/Mobile Development.avif"
+            src="/image/mobile-development.avif"
             alt="Mobile App Development"
             className="service-img"
           />
@@ -71,7 +71,7 @@ function Services() {
         {/* Cloud Solutions */}
         <div className="service-card">
           <img
-            src="/image/Cloud Solutions.avif"
+            src="/image/cloud-solutions.avif"
             alt="Cloud Solutions"
             className="service-img"
           />
