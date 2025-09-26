@@ -17,12 +17,12 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            <a href="mailto:info@yapitechinnovations.co.za">
-              <img src="/image/email.png" alt="Email Icon" />
+            <a href="https://x.com/yapi_sango" target="_blank" rel="noopener noreferrer">
+              <img src="/image/twitter.png" alt="Twitter Icon" />
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/sango.yapi">
+            <a href="https://www.facebook.com/sango.yapi" target="_blank" rel="noopener noreferrer">
               <img src="/image/facebook.png" alt="Facebook Icon" />
             </a>
           </li>
