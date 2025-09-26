@@ -14,7 +14,7 @@ function Services() {
         {/* Web Development */}
         <div className="service-card">
           <img
-            src="public/image/Web Development.jpg"
+            src="/image/Web Development.jpg"
             alt="Web Development"
             className="service-img"
           />

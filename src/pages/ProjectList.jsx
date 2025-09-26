@@ -10,7 +10,7 @@ export default function ProjectList() {
     web: [
       {
         title: "Chef Claude",
-        link: "https://scintillating-lebkuchen-824685.netlify.app/",
+        link: "https://scintillating-lebkuchen-824685.netlify.app",
         img: "/image/chef-claude-icon.png",
         alt: "Chef Claude Logo",
       },
@@ -22,13 +22,13 @@ export default function ProjectList() {
       },
       {
         title: "Van Life",
-        link: "https://thunderous-daffodil-e1ce57.netlify.app/",
+        link: "https://thunderous-daffodil-e1ce57.netlify.app",
         img: "/image/modest-explorer.png",
         alt: "Van Life project screenshot",
       },
       {
         title: "Assembly: Endgame",
-        link: "https://darling-souffle-09ab2b.netlify.app/",
+        link: "https://darling-souffle-09ab2b.netlify.app",
         img: "/image/Guessing Game.jpg",
         alt: "Assembly Endgame Screenshot",
       },
@@ -43,14 +43,14 @@ export default function ProjectList() {
       },
       {
         title: "Shopping Cart App",
-        link: "https://add-t0-cartsangoyapi.netlify.app/",
+        link: "https://add-t0-cartsangoyapi.netlify.app",
         img: "/image/shopping-cart.avif",
         alt: "Shopping Cart App Screenshot",
       },
       
       {
         title: "Guessin Game",
-        link: "https://ubiquitous-dango-fdacdf.netlify.app/",
+        link: "https://ubiquitous-dango-fdacdf.netlify.app",
         img: "/image/Rectangle 84.png",
         alt: "Guessin Game Screenshot",
       },
@@ -65,7 +65,7 @@ export default function ProjectList() {
       },
       {
         title: "Tenzies App",
-        link: "https://marvelous-rabanadas-9f1670.netlify.app/",
+        link: "https://marvelous-rabanadas-9f1670.netlify.app",
         img: "/image/tenzies.jpg",
         alt: "Tenzies App Screenshot",
       },
