@@ -29,7 +29,7 @@ export default function ProjectList() {
       {
         title: "Assembly: Endgame",
         link: "https://darling-souffle-09ab2b.netlify.app",
-        img: "/image/assembly-endgame.jpg",
+        img: "/image/guessing-game.jpg",
         alt: "Assembly Endgame Screenshot",
       },
     ],
