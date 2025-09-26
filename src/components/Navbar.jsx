@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="container nav-inner">
         {/* Logo */}
         <div className="logo">
-          <img src="/image/YapiTech logo.png" alt="YapiTech logo" />
+          <img src="/image/yapitech-logo.png" alt="YapiTech logo" />
           <span className="brand">YAPITECH</span>
         </div>
 

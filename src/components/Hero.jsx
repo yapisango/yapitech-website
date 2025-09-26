@@ -15,7 +15,7 @@ export default function Hero() {
     >
       <div className="container hero-inner">
         <img
-          src="/image/YapiTech banner.jpg"
+          src="/image/yapitech-banner.jpg"
           alt="Innovative solutions banner"
           className="hero-banner"
         />
