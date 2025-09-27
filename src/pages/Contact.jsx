@@ -1,5 +1,7 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import TestEmail from "../components/TestEmail";
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -127,6 +129,7 @@ export default function Contact() {
             )}
           </button>
         </form>
+        <TestEmail />
       </div>
     </section>
   );
