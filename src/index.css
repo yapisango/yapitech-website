@@ -669,5 +669,29 @@ footer {
   display: block;
   object-fit: cover;
 }
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #0077b6; /* YapiTech blue */
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #90e0ef; /* lighter aqua */
+  border-top: 2px solid #0077b6; /* brand blue */
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 
 
