@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -21,9 +22,9 @@ export default function Hero() {
         />
         <h1>YapiTech Innovations</h1>
         <p className="tagline">Innovating Tomorrow, Today</p>
-        <a className="btn" href="/contact">
+        <Link to="/contact" className="btn">
           Get in Touch
-        </a>
+        </Link>
       </div>
     </section>
   );
