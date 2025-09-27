@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+  const form = useRef();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -14,9 +16,25 @@ export default function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Thank you for contacting us! We'll get back to you soon.");
-    setFormData({ name: "", email: "", message: "" });
+
+    emailjs
+      .sendForm(
+        "service_nlaear1",      // Service ID
+        "template_azoh6mp",     // Template ID
+        form.current,           // Form reference
+        "gmryos3FowU41GsbR"     // Public Key
+      )
+      .then(
+        (result) => {
+          console.log("SUCCESS!", result.text);
+          alert("✅ Thank you for contacting us! We’ll get back to you soon.");
+          setFormData({ name: "", email: "", message: "" });
+        },
+        (error) => {
+          console.error("FAILED...", error.text);
+          alert("❌ Something went wrong. Please try again later.");
+        }
+      );
   }
 
   return (
@@ -25,7 +43,7 @@ export default function Contact() {
         <h1>Contact Us</h1>
         <p>We’d love to hear from you! Fill out the form below:</p>
 
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form ref={form} className="contact-form" onSubmit={handleSubmit}>
           <label>
             Name:
             <input 
@@ -64,3 +82,4 @@ export default function Contact() {
     </section>
   );
 }
+
