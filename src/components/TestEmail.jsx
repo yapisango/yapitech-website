@@ -3,6 +3,11 @@ import React from "react";
 import emailjs from "@emailjs/browser";
 
 export default function TestEmail() {
+  if (process.env.NODE_ENV !== "development") {
+    // 🔒 Hide in production
+    return null;
+  }
+
   const handleTest = () => {
     const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ADMIN;
@@ -53,4 +58,5 @@ export default function TestEmail() {
     </div>
   );
 }
+
 

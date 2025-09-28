@@ -129,7 +129,7 @@ export default function Contact() {
             )}
           </button>
         </form>
-        <TestEmail />
+        {/* <TestEmail /> */}
       </div>
     </section>
   );
