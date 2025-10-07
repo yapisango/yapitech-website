@@ -21,7 +21,7 @@ export default function About() {
         </div>
 
         <div className="about-photo">
-          <img src="public/image/Sango.jpg" alt="Founder Sango Mabhuti Yapi" />
+          <img src="/image/Sango.jpg" alt="Founder Sango Mabhuti Yapi" />
         </div>
       </div>
     </section>
