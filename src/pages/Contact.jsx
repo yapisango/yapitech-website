@@ -1,7 +1,4 @@
 import React, { useState, useRef } from "react";
-import emailjs from "@emailjs/browser";
-import TestEmail from "../components/TestEmail";
-
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -19,51 +16,39 @@ export default function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    setLoading(true);
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  setLoading(true);
 
-    // Send to admin
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ADMIN,
-        form.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          console.log("✅ Admin email sent");
+  try {
+    const res = await fetch("/.netlify/functions/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        title: formData.title,
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      }),
+    });
 
-          // Send confirmation to user
-          emailjs
-            .sendForm(
-              import.meta.env.VITE_EMAILJS_SERVICE_ID,
-              import.meta.env.VITE_EMAILJS_TEMPLATE_USER,
-              form.current,
-              import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-            )
-            .then(
-              () => {
-                console.log("✅ Confirmation email sent");
-                alert("Your message has been sent successfully!");
-                setFormData({ title: "", name: "", email: "", message: "" });
-                setLoading(false);
-              },
-              (err) => {
-                console.error("❌ Failed sending confirmation:", err.text);
-                alert("Message sent to admin, but confirmation failed.");
-                setLoading(false);
-              }
-            );
-        },
-        (err) => {
-          console.error("❌ Failed sending to admin:", err.text);
-          alert("Oops! Something went wrong.");
-          setLoading(false);
-        }
-      );
+    const data = await res.json();
+
+    if (data.success) {
+      alert("✅ Your message has been sent successfully!");
+      setFormData({ title: "", name: "", email: "", message: "" });
+    } else {
+      alert("❌ Error sending message: " + data.error);
+    }
+  } catch (err) {
+    alert("⚠️ Network error: " + err.message);
+  } finally {
+    setLoading(false);
   }
+};
+
 
   return (
     <section id="contact" className="contact-section">
