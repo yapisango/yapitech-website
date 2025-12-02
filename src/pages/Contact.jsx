@@ -1,5 +1,18 @@
 import React, { useState, useRef } from "react";
 
+const FORM_BASE =
+  "https://docs.google.com/forms/d/e/1FAIpQLSfFzCwBdB3vIYKbYZUkwgj3gAY5TR9lb5q8-CyVATRbYsIyRA/viewform?usp=pp_url";
+
+function buildPrefilledLink(formData) {
+  const params = new URLSearchParams();
+  params.append("entry.1649166049", formData.name);
+  params.append("entry.1714035567", "YapiTech Innovations");
+  params.append("entry.1578812162", "Frontend Web Development");
+  params.append("entry.365544706", formData.message);
+
+  return `${FORM_BASE}&${params.toString()}`;
+}
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     title: "",
@@ -114,7 +127,18 @@ export default function Contact() {
             )}
           </button>
         </form>
+
+        <a
+          className="btn google-form-btn"
+          href={buildPrefilledLink(formData)}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open Prefilled Google Form
+        </a>
+
         {/* <TestEmail /> */}
+        
       </div>
     </section>
   );

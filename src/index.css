@@ -692,6 +692,19 @@ footer {
   }
 }
 
+.google-form-btn {
+  margin-top: 1.5rem;
+  display: inline-block;
+  background: #4285f4;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.google-form-btn:hover {
+  background: #2f6ae0;
+}
+
 
 
 
