@@ -231,8 +231,41 @@ main {
   transition: background 0.3s ease;
 }
 
-.btn:hover {
+.btn-original {
+  background: #0077ff;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn-original:hover {
   background: #005fcc;
+}
+
+
+.btn-primary {
+  background: #0077ff;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: #005fcc;
+}
+
+.btn-secondary {
+  background: #00d4ff;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn-secondary:hover {
+  background: #00a3cc;
 }
 
 /* About Section (mobile first) */

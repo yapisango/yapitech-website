@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 
-const FORM_BASE =
-  "https://docs.google.com/forms/d/e/1FAIpQLSfFzCwBdB3vIYKbYZUkwgj3gAY5TR9lb5q8-CyVATRbYsIyRA/viewform?usp=pp_url";
+const FORM_BASE = "https://forms.gle/tY7Frt1ei2CMUNf49";
 
 function buildPrefilledLink(formData) {
   const params = new URLSearchParams();
@@ -138,7 +137,7 @@ export default function Contact() {
         </a>
 
         {/* <TestEmail /> */}
-        
+
       </div>
     </section>
   );
