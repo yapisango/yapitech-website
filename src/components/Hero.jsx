@@ -2,6 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
+
+  // Full safe Google Form link — NOT the short URL
+  const FORM_URL =
+    "https://docs.google.com/forms/d/e/1FAIpQLSfFzCwBdB3vIYKbYZUkwgj3gAY5TR9lb5q8-CyVATRbYsIyRA/viewform?usp=pp_url";
+
   return (
     <section
       id="home"
@@ -23,27 +28,24 @@ export default function Hero() {
           className="hero-banner"
         />
 
-        {/* Main title */}
         <h1 className="hero-title">Build. Innovate. Transform.</h1>
 
-        {/* Sub-title */}
         <p className="hero-subtitle">
           Modern, scalable digital solutions for businesses that want to grow.
         </p>
 
-        {/* Intro paragraph */}
         <p className="hero-intro">
           YapiTech Innovations specializes in creating fast, responsive, and 
           user-focused digital experiences. From websites to cloud systems and 
           AI-powered tools, we help businesses modernize and operate smarter.
         </p>
 
-        {/* --- CTA Buttons --- */}
+        {/* CTA Buttons */}
         <div className="hero-buttons">
 
-          {/* New CTA 1 (External Form) */}
+          {/* CTA 1 */}
           <a
-            href="https://forms.gle/tY7Frt1ei2CMUNf49"
+            href={FORM_URL}
             className="btn btn-primary"
             target="_blank"
             rel="noopener noreferrer"
@@ -51,9 +53,9 @@ export default function Hero() {
             Start Your Project
           </a>
 
-          {/* New CTA 2 (External Form) */}
+          {/* CTA 2 */}
           <a
-            href="https://forms.gle/tY7Frt1ei2CMUNf49"
+            href={FORM_URL}
             className="btn btn-secondary"
             target="_blank"
             rel="noopener noreferrer"
@@ -61,7 +63,7 @@ export default function Hero() {
             Request a Quote
           </a>
 
-          {/* Your original button (internal route) */}
+          {/* Internal Route */}
           <Link to="/contact" className="btn btn-original">
             Get in Touch
           </Link>
@@ -71,6 +73,3 @@ export default function Hero() {
     </section>
   );
 }
-
-
-

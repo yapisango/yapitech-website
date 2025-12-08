@@ -3,13 +3,14 @@ import React, { useState, useRef } from "react";
 const FORM_BASE =
   "https://docs.google.com/forms/d/e/1FAIpQLSfFzCwBdB3vIYKbYZUkwgj3gAY5TR9lb5q8-CyVATRbYsIyRA/viewform?usp=pp_url";
 
+// Build Google Forms prefilled link
 function buildPrefilledLink({ email, name, message }) {
   const params = new URLSearchParams({
-    "entry.1671128960": email,             // Email
-    "entry.1649166049": name,              // Full Name
-    "entry.1714035567": "YapiTech Innovations", // Company Name (fixed or dynamic)
-    "entry.1578812162": "Frontend Web Development", // Service Interest
-    "entry.365544706": message,            // Message
+    "entry.1671128960": email || "",
+    "entry.1649166049": name || "",
+    "entry.1714035567": "YapiTech Innovations",
+    "entry.1578812162": "Frontend Web Development",
+    "entry.365544706": message || "",
   });
 
   return `${FORM_BASE}&${params.toString()}`;
