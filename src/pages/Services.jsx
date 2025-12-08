@@ -6,11 +6,12 @@ function Services() {
     <div className="services-page">
       <h1>Our Services</h1>
       <p>
-        At YapiTech Innovations, we deliver top-notch tech solutions to help
-        your business thrive.
+        YapiTech Innovations provides modern digital solutions that help 
+        businesses grow, operate smarter, and stay competitive.
       </p>
 
       <div className="service-list">
+
         {/* Web Development */}
         <div className="service-card">
           <img
@@ -21,49 +22,11 @@ function Services() {
           <div className="service-card-content">
             <h2>🌐 Web Development</h2>
             <p>
-              We create modern, responsive, and high-performance websites for
-              businesses of all sizes.
+              Fast, secure, and responsive websites designed to give your 
+              business a professional and modern online presence.
             </p>
             <Link to="/services/web" className="service-link">
-              View Projects →
-            </Link>
-          </div>
-        </div>
-
-        {/* Software Development */}
-        <div className="service-card">
-          <img
-            src="/image/software-development1.avif"
-            alt="Software Development"
-            className="service-img"
-          />
-          <div className="service-card-content">
-            <h2>⚙️ Software Development</h2>
-            <p>
-              Tailor-made software solutions that automate workflows and boost
-              efficiency.
-            </p>
-            <Link to="/services/software" className="service-link">
-              View Projects →
-            </Link>
-          </div>
-        </div>
-
-        {/* Mobile App Development */}
-        <div className="service-card">
-          <img
-            src="/image/mobile-development.avif"
-            alt="Mobile App Development"
-            className="service-img"
-          />
-          <div className="service-card-content">
-            <h2>📱 Mobile App Development</h2>
-            <p>
-              Mobile-first applications that offer seamless user experiences
-              across devices.
-            </p>
-            <Link to="/services/mobile" className="service-link">
-              View Projects →
+              Learn More →
             </Link>
           </div>
         </div>
@@ -78,14 +41,34 @@ function Services() {
           <div className="service-card-content">
             <h2>☁️ Cloud Solutions</h2>
             <p>
-              Scalable cloud-based systems to ensure your business is always
-              connected and secure.
+              We set up cloud-based systems that improve reliability, enable 
+              remote access, and streamline your business operations.
             </p>
             <Link to="/services/cloud" className="service-link">
-              View Projects →
+              Learn More →
             </Link>
           </div>
         </div>
+
+        {/* AI-Assisted Solutions */}
+        <div className="service-card">
+          <img
+            src="/image/ai-solutions.jpg"
+            alt="AI Services"
+            className="service-img"
+          />
+          <div className="service-card-content">
+            <h2>🤖 AI-Assisted Business Solutions</h2>
+            <p>
+              Custom AI tools that automate tasks, improve decision-making, 
+              and enhance your business efficiency.
+            </p>
+            <Link to="/services/ai" className="service-link">
+              Learn More →
+            </Link>
+          </div>
+        </div>
+
       </div>
     </div>
   );
