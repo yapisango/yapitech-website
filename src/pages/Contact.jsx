@@ -1,13 +1,16 @@
 import React, { useState, useRef } from "react";
 
-const FORM_BASE = "https://docs.google.com/forms/d/e/1FAIpQLSfFzCwBdB3vIYKbYZUkwgj3gAY5TR9lb5q8-CyVATRbYsIyRA/viewform?usp=pp_url";
+const FORM_BASE =
+  "https://docs.google.com/forms/d/e/1FAIpQLSfFzCwBdB3vIYKbYZUkwgj3gAY5TR9lb5q8-CyVATRbYsIyRA/viewform?usp=pp_url";
 
-function buildPrefilledLink(formData) {
-  const params = new URLSearchParams();
-  params.append("entry.1649166049", formData.name);
-  params.append("entry.1714035567", "YapiTech Innovations");
-  params.append("entry.1578812162", "Frontend Web Development");
-  params.append("entry.365544706", formData.message);
+function buildPrefilledLink({ email, name, message }) {
+  const params = new URLSearchParams({
+    "entry.1671128960": email,             // Email
+    "entry.1649166049": name,              // Full Name
+    "entry.1714035567": "YapiTech Innovations", // Company Name (fixed or dynamic)
+    "entry.1578812162": "Frontend Web Development", // Service Interest
+    "entry.365544706": message,            // Message
+  });
 
   return `${FORM_BASE}&${params.toString()}`;
 }
