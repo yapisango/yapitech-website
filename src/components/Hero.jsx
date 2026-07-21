@@ -28,16 +28,17 @@ export default function Hero() {
           className="hero-banner"
         />
 
-        <h1 className="hero-title">Build. Innovate. Transform.</h1>
+        <h1 className="hero-title">Custom Software, Websites & AI Solutions for Growing Businesses</h1>
 
         <p className="hero-subtitle">
-          Modern, scalable digital solutions for businesses that want to grow.
+          We help SMEs, startups, schools and organisations build modern digital solutions that automate processes, improve efficiency and accelerate growth.
         </p>
 
         <p className="hero-intro">
-          YapiTech Innovations specializes in creating fast, responsive, and 
-          user-focused digital experiences. From websites to cloud systems and 
-          AI-powered tools, we help businesses modernize and operate smarter.
+          From professional business websites and custom software
+          development to cloud solutions and AI-powered tools,
+          YapiTech helps organisations modernise operations and
+          achieve measurable business results.
         </p>
 
         {/* CTA Buttons */}
@@ -50,7 +51,7 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Start Your Project
+            Book a Consultation
           </a>
 
           {/* CTA 2 */}
@@ -65,9 +66,33 @@ export default function Hero() {
 
           {/* Internal Route */}
           <Link to="/contact" className="btn btn-original">
-            Get in Touch
+            View Our Services
           </Link>
 
+        </div>
+
+        <div className="hero-trust">
+          <span>✓ CIPC Registered</span>
+          <span>✓ CSD Registered</span>
+          <span>✓ B-BBEE Compliant</span>
+          <span>✓ SARS Tax Compliant</span>
+        </div>
+
+        <div className="hero-stats">
+          <div>
+            <strong>4+</strong>
+            <span>Core Services</span>
+          </div>
+
+          <div>
+            <strong>100%</strong>
+            <span>Responsive Design</span>
+          </div>
+
+          <div>
+            <strong>24/7</strong>
+            <span>Online Presence</span>
+          </div>
         </div>
       </div>
     </section>
