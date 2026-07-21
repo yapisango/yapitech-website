@@ -1,5 +1,10 @@
 # 🌐 YapiTech Innovations Website
 
+![React](https://img.shields.io/badge/React-18-blue)
+![Vite](https://img.shields.io/badge/Vite-Latest-purple)
+![Netlify](https://img.shields.io/badge/Deployment-Netlify-success)
+![License](https://img.shields.io/badge/License-Proprietary-red)
+
 Official website for YapiTech Innovations (Pty) Ltd.
 
 This project serves as the company's digital presence, showcasing software development, web development, automation, and technology consulting services.
@@ -11,7 +16,7 @@ The website was designed with a focus on performance, responsiveness, accessibil
 ## Live Website
 
 
-https://yapitechinnovations.co.za
+Visit YapiTech Innovations https://yapitechinnovations.co.za
 
 ---
 
@@ -130,6 +135,35 @@ npm run dev
 
 ---
 
+## Version History
+
+### v1.0
+- Initial company website launch
+- Services pages implemented
+- Contact functionality added
+- Netlify deployment completed
+
+### v2.0 (Planned)
+- Case studies
+- Project portfolio
+- SEO enhancements
+- AI chatbot integration
+- Client portal
+
+---
+
+## Technologies Demonstrated
+
+- React Components
+- React Router
+- Responsive Design
+- JavaScript ES6+
+- Netlify Deployment
+- Git Version Control
+- Frontend Architecture
+
+---
+
 ## Future Roadmap
 
 - AI-powered customer support chatbot
@@ -140,6 +174,26 @@ npm run dev
 - Online quotation system
 
 ---
+
+## Development Status
+
+🟢 Active Development
+
+The YapiTech website is actively maintained and continuously improved as both:
+
+- A production business website
+- A software engineering case study
+- A portfolio project
+
+---
+
+## Target Markets
+
+- Schools and Educare Centres
+- Small and Medium Businesses (SMEs)
+- Startups
+- Government and Public Sector
+- Professional Service Providers
 
 ## Current Products
 
