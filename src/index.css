@@ -315,7 +315,52 @@ main {
   }
 }
 
-/* Status Badges - Mobile First */
+
+
+/* Featured Projects Section */
+
+.projects-section {
+  padding: 3rem 1rem;
+  background: #ffffff;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card .btn {
+  margin-top: auto;
+}
+
+.project-card h3 {
+  margin: 1rem 0;
+}
+
+.project-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Status Badges */
 
 .status-badge {
   display: inline-block;
@@ -347,15 +392,31 @@ main {
 }
 
 @media (min-width: 768px) {
+
+  .projects-section {
+    padding: 4rem 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .status-badge {
-    padding: 0.45rem 0.9rem;
     font-size: 0.85rem;
   }
 }
 
 @media (min-width: 1024px) {
+
+  .projects-section {
+    padding: 5rem 3rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   .status-badge {
-    padding: 0.5rem 1rem;
     font-size: 0.9rem;
   }
 }
