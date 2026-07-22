@@ -18,7 +18,7 @@ export default function Pricing() {
             <h3>Starter Website</h3>
 
             <div className="price">
-              Starting From
+              From
               <span>R3,500</span>
             </div>
 

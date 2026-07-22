@@ -8,7 +8,7 @@ export default function ServicesPreview() {
       <ul>
         <li>🌐 Web Development</li>
         <li>⚙️ Software Development</li>
-        <li>📱 Mobile App Development</li>
+        <li> 🤖 AI Assisted BusinessSolutions</li>
         <li>☁️ Cloud Solutions</li>
       </ul>
       <Link to="/services" className="btn">Explore Services</Link>
