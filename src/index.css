@@ -870,6 +870,40 @@ main {
   background: #fff;
 }
 
+.contact-preview {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: #f8f9fa;
+}
+
+.contact-preview h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.contact-preview p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.contact-preview-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-preview-features span {
+  background: #ffffff;
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-weight: 600;
+}
+
 textarea {
   min-height: 100px;
   resize: vertical;

@@ -4,9 +4,26 @@ import { Link } from "react-router-dom";
 export default function ContactPreview() {
   return (
     <section className="contact-preview">
-      <h2>Contact Us</h2>
-      <p>We’d love to hear from you! Get in touch with us today.</p>
-      <Link to="/contact" className="btn">Go to Contact Page</Link>
+
+      <h2>Ready to Start Your Project?</h2>
+
+      <p>
+        Whether you need a professional website,
+        custom software, cloud solutions, or AI-powered
+        business tools, YapiTech can help bring your
+        ideas to life.
+      </p>
+
+      <div className="contact-preview-features">
+        <span>✓ Free Consultation</span>
+        <span>✓ Custom Solutions</span>
+        <span>✓ Responsive Support</span>
+      </div>
+
+      <Link to="/contact" className="btn">
+        Book a Consultation
+      </Link>
+
     </section>
   );
 }
