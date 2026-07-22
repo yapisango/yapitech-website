@@ -4,13 +4,7 @@ import { Link } from "react-router-dom";
 export default function CloudSolutions() {
   return (
     <div className="service-detail-page">
-      <h1>Cloud Solutions</h1>
-
-      <img 
-        src="images/services/cloud-solutions.jpg"
-        alt="Cloud Solutions"
-        className="service-detail-img"
-      />
+      <h1>☁️ Cloud Solutions</h1>
 
       <section className="overview">
         <h2>Overview</h2>

@@ -4,13 +4,7 @@ import { Link } from "react-router-dom";
 export default function WebDevelopment() {
   return (
     <div className="service-detail-page">
-      <h1>Website Development</h1>
-
-      <img 
-        src="images/services/web-dev.jpg"
-        alt="Website Development"
-        className="service-detail-img"
-      />
+      <h1>🌐Website Development</h1>
 
       <section className="overview">
         <h2>Overview</h2>

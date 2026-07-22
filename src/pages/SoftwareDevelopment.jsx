@@ -11,10 +11,6 @@ export default function SoftwareDevelopment() {
           We build custom software solutions that streamline operations,
           automate repetitive tasks, and help organisations scale efficiently.
         </p>
-
-        <Link to="/contact" className="btn">
-          Discuss Your Project
-        </Link>
       </section>
 
       <section className="service-content">
@@ -35,6 +31,10 @@ export default function SoftwareDevelopment() {
           Ideal for schools, SMEs, startups, consultants and organisations
           looking to replace manual processes with efficient digital systems.
         </p>
+
+        <Link to="/contact" className="btn">
+          Discuss Your Project
+        </Link>
       </section>
     </div>
   );

@@ -4,13 +4,7 @@ import { Link } from "react-router-dom";
 export default function AIAssistedSolutions() {
   return (
     <div className="service-detail-page">
-      <h1>AI-Assisted Solutions</h1>
-
-      <img 
-        src="images/services/ai-solutions.jpg"
-        alt="AI Solutions"
-        className="service-detail-img"
-      />
+      <h1>🤖AI-Assisted Solutions</h1>
 
       <section className="overview">
         <h2>Overview</h2>
