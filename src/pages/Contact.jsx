@@ -69,8 +69,79 @@ export default function Contact() {
   return (
     <section id="contact" className="contact-section">
       <div className="container">
-        <h1>Contact Us</h1>
-        <p>We’d love to hear from you! Fill out the form below:</p>
+        <h1>Let's Build Something Great Together</h1>
+
+        <p className="contact-intro">
+          Whether you need a professional website,
+          custom software solution, cloud infrastructure,
+          or AI-powered business automation, we're ready
+          to help bring your ideas to life.
+        </p>
+
+        <div className="contact-trust">
+
+          <span>✓ CIPC Registered</span>
+
+          <span>✓ CSD Registered</span>
+
+          <span>✓ B-BBEE Compliant</span>
+
+          <span>✓ SARS Tax Compliant</span>
+
+        </div>
+
+        <div className="contact-info-grid">
+
+          <div className="contact-info-card">
+            <h3>📍 Location</h3>
+            <p>Johannesburg, South Africa</p>
+          </div>
+
+          <div className="contact-info-card">
+            <h3>⚡ Response Time</h3>
+            <p>Within 24–48 Hours</p>
+          </div>
+
+          <div className="contact-info-card">
+            <h3>💼 Services</h3>
+            <p>Web, Software, AI & Cloud Solutions</p>
+          </div>
+
+        </div>
+
+        <div className="why-contact">
+
+          <h2>Why Work With YapiTech?</h2>
+
+          <div className="why-grid">
+
+            <div className="why-card">
+              <h3>⚡ Fast Communication</h3>
+              <p>
+                Clear communication and quick responses
+                throughout every project.
+              </p>
+            </div>
+
+            <div className="why-card">
+              <h3>💡 Tailored Solutions</h3>
+              <p>
+                Every solution is customised to your
+                business requirements.
+              </p>
+            </div>
+
+            <div className="why-card">
+              <h3>🤝 Long-Term Partnership</h3>
+              <p>
+                We focus on building technology that
+                supports sustainable growth.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
 
         <form className="contact-form" ref={form} onSubmit={handleSubmit}>
           <label>
