@@ -46,6 +46,9 @@ export default function Navbar() {
             <li>
               <NavLink to="/contact">Contact</NavLink>
             </li>
+            <li>
+              <NavLink to="/projects">Projects</NavLink>
+            </li>
           </ul>
         </nav>
       </div>

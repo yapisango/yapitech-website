@@ -11,6 +11,7 @@ import ProjectList from "./pages/ProjectList";
 import WebDevelopment from "./pages/WebDevelopment";
 import CloudSolutions from "./pages/CloudSolutions";
 import AIAssistedSolutions from "./pages/AIAssistedSolutions";
+import SoftwareDevelopment from "./pages/SoftwareDevelopment";
 
 export default function App() {
   return (
@@ -54,6 +55,15 @@ export default function App() {
           element={
             <Layout>
               <WebDevelopment />
+            </Layout>
+          }
+        />
+
+        <Route
+          path="/services/software"
+          element={
+            <Layout>
+              <SoftwareDevelopment />
             </Layout>
           }
         />
