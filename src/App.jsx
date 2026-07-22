@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import ProjectList from "./pages/ProjectList";
 import Projects from "./pages/Projects";
+import ProductDetail from "./pages/ProductDetail";
 
 import WebDevelopment from "./pages/WebDevelopment";
 import CloudSolutions from "./pages/CloudSolutions";
@@ -53,6 +54,15 @@ export default function App() {
           element={
             <Layout>
               <Projects />
+            </Layout>
+          }
+        />
+
+        <Route
+          path="/projects/:projectId"
+          element={
+            <Layout>
+              <ProductDetail />
             </Layout>
           }
         />

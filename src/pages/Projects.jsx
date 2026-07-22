@@ -30,6 +30,44 @@ export default function Projects() {
     },
   ];
 
+  const portfolioProjects = [
+  {
+    title: "Chef Claude",
+    tech: "React + OpenAI",
+    link: "https://scintillating-lebkuchen-824685.netlify.app",
+  },
+  {
+    title: "Van Life",
+    tech: "React Router",
+    link: "https://thunderous-daffodil-e1ce57.netlify.app",
+  },
+  {
+    title: "Travel Journal",
+    tech: "React",
+    link: "https://ubiquitous-dango-fdacdf.netlify.app",
+  },
+  {
+    title: "Assembly: Endgame",
+    tech: "JavaScript",
+    link: "https://darling-souffle-09ab2b.netlify.app",
+  },
+  {
+    title: "Shopping Cart App",
+    tech: "React",
+    link: "https://add-t0-cartsangoyapi.netlify.app",
+  },
+  {
+    title: "Fullstack Sort API",
+    tech: "Node.js + Express",
+    link: "https://fullstack-sort-api.onrender.com",
+  },
+  {
+    title: "Tenzies",
+    tech: "React",
+    link: "https://marvelous-rabanadas-9f1670.netlify.app",
+  },
+];
+
   return (
     <section className="projects-page">
       <div className="container">
@@ -56,6 +94,36 @@ export default function Projects() {
             </div>
           ))}
         </div>
+
+        <section className="portfolio-section">
+          <h2>Development Portfolio</h2>
+
+          <p className="portfolio-intro">
+            Real-world applications and software projects developed using
+            React, JavaScript, Node.js and modern web technologies.
+          </p>
+
+          <div className="portfolio-grid">
+            {portfolioProjects.map((project, index) => (
+              <div key={index} className="portfolio-card">
+                <h3>{project.title}</h3>
+
+                <span className="portfolio-tech">
+                  {project.tech}
+                </span>
+
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-btn"
+                >
+                  View Live Project →
+                </a>
+              </div>
+            ))}
+          </div>
+        </section>
       </div>
     </section>
   );
