@@ -1360,6 +1360,24 @@ footer {
   }
 }
 
+.project-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #00d4ff;
+  color: #111;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.project-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
 
 
 
