@@ -74,26 +74,48 @@ export default function Projects() {
         <h1>Our Projects</h1>
 
         <p className="projects-intro">
-          Explore YapiTech's current and upcoming digital solutions.
+          Explore YapiTech's current products, client solutions,
+          and software development portfolio.
         </p>
 
-        <div className="projects-grid">
-          {projects.map((project) => (
-            <div key={project.id} className="project-card">
-              <span className="project-status">
-                {project.status}
-              </span>
+        <div className="project-stats">
+          <div className="stat-card">
+            <h3>4</h3>
+            <p>Business Solutions</p>
+          </div>
 
-              <h2>{project.title}</h2>
+          <div className="stat-card">
+            <h3>7</h3>
+            <p>Portfolio Projects</p>
+          </div>
 
-              <p>{project.description}</p>
-
-              <button className="project-btn">
-                Coming Soon →
-              </button>
-            </div>
-          ))}
+          <div className="stat-card">
+            <h3>React</h3>
+            <p>Primary Frontend Stack</p>
+          </div>
         </div>
+
+        <section className="solutions-section">
+          <h2>Business Solutions</h2>
+
+          <p className="portfolio-intro">
+            Digital products and platforms currently being developed by YapiTech.
+          </p>
+
+          <div className="solutions-grid">
+            {projects.map((project) => (
+              <div key={project.id} className="solution-card">
+                <span className="project-status">
+                  {project.status}
+                </span>
+
+                <h3>{project.title}</h3>
+
+                <p>{project.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
         <section className="portfolio-section">
           <h2>Development Portfolio</h2>
