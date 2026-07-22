@@ -31,10 +31,32 @@ function Services() {
           </div>
         </div>
 
+        {/* Software Development */}
+        <div className="service-card">
+          <img
+            src="/image/software-development1.avif"
+            alt="Software Development"
+            className="service-img"
+          />
+
+          <div className="service-card-content">
+            <h2>⚙️ Software Development</h2>
+
+            <p>
+              Custom software solutions designed to automate business
+              processes, improve efficiency, and support long-term growth.
+            </p>
+
+            <Link to="/services/software" className="service-link">
+              Learn More →
+            </Link>
+          </div>
+        </div>
+
         {/* Cloud Solutions */}
         <div className="service-card">
           <img
-            src="/image/cloud-solutions.avif"
+            src="/image/cloud-deployment.jpg"
             alt="Cloud Solutions"
             className="service-img"
           />
@@ -53,7 +75,7 @@ function Services() {
         {/* AI-Assisted Solutions */}
         <div className="service-card">
           <img
-            src="/image/ai-solutions.jpg"
+            src="/image/ai-assisted.jpg"
             alt="AI Services"
             className="service-img"
           />
