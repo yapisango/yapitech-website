@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export default function Projects() {
   const projects = [
     {
@@ -8,7 +6,6 @@ export default function Projects() {
       status: "Live",
       description:
         "Corporate website showcasing YapiTech's software development, cloud solutions, AI services and business offerings.",
-      link: "/projects/yapitech-website",
     },
     {
       id: 2,
@@ -16,7 +13,6 @@ export default function Projects() {
       status: "Planning",
       description:
         "School and educare management platform for learner registration, attendance, communication and reporting.",
-      link: "/projects/educare",
     },
     {
       id: 3,
@@ -24,7 +20,6 @@ export default function Projects() {
       status: "Research",
       description:
         "CRM solution helping SMEs manage leads, quotations, customers and sales activities.",
-      link: "/projects/crm",
     },
     {
       id: 4,
@@ -32,7 +27,6 @@ export default function Projects() {
       status: "Concept",
       description:
         "AI-powered assistant designed to automate customer support and improve response times.",
-      link: "/projects/ai-assistant",
     },
   ];
 
@@ -56,12 +50,9 @@ export default function Projects() {
 
               <p>{project.description}</p>
 
-              <Link
-                to={project.link}
-                className="project-btn"
-              >
-                View Project →
-              </Link>
+              <button className="project-btn">
+                Coming Soon →
+              </button>
             </div>
           ))}
         </div>
