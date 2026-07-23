@@ -34,7 +34,7 @@ export default function Projects() {
   {
     title: "Chef Claude",
     tech: "React + OpenAI",
-    link: "https://scintillating-lebkuchen-824685.netlify.app",
+    link: "https://ai-chefapi-project.netlify.app",
   },
   {
     title: "Van Life",
@@ -49,7 +49,7 @@ export default function Projects() {
   {
     title: "Assembly: Endgame",
     tech: "JavaScript",
-    link: "https://darling-souffle-09ab2b.netlify.app",
+    link: "https://endgame-project.netlify.app",
   },
   {
     title: "Shopping Cart App",
