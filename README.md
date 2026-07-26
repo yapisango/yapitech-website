@@ -22,6 +22,14 @@ Visit YapiTech Innovations https://yapitechinnovations.co.za
 
 ## Screenshots
 
+![alt text](yapitechinnovations.co.za_.png)
+
+## Engineering Handbook
+
+YapiTech documents its engineering philosophy, architecture decisions, and development standards in the Engineering Handbook.
+
+📖 See: `docs/engineering-handbook/README.md`
+
 ### Home Page
 
 <img width="1901" alt="Home Page" src="https://github.com/user-attachments/assets/767d81a2-2a91-4240-af03-bffee426a243" />
