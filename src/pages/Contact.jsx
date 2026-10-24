@@ -50,21 +50,41 @@ export default function Contact() {
       }),
     });
 
-    const data = await res.json();
+    const responseText = await res.text();
+
+    let data;
+    try {
+      data = responseText ? JSON.parse(responseText) : {};
+    } catch {
+      throw new Error("The server returned an invalid response.");
+    }
+
+    if (!res.ok) {
+      throw new Error(
+        data.message || data.error || `Request failed (${res.status}).`
+      );
+    }
 
     if (data.success) {
-      alert("✅ Your message has been sent successfully!");
-      setFormData({ title: "", name: "", email: "", message: "" });
+      alert("Your message has been sent successfully!");
+      setFormData({
+        title: "",
+        name: "",
+        email: "",
+        message: "",
+      });
     } else {
-      alert("❌ Error sending message: " + data.error);
+      throw new Error(
+        data.message || data.error || "The message could not be sent."
+      );
     }
   } catch (err) {
-    alert("⚠️ Network error: " + err.message);
+    console.error("Contact form submission failed:", err);
+    alert(`Unable to send your message: ${err.message}`);
   } finally {
     setLoading(false);
   }
 };
-
 
   return (
     <section id="contact" className="contact-section">

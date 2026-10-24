@@ -65,7 +65,7 @@ export default function Hero() {
           </a>
 
           {/* Internal Route */}
-          <Link to="/contact" className="btn btn-original">
+          <Link to="/services" className="btn btn-original">
             View Our Services
           </Link>
 
