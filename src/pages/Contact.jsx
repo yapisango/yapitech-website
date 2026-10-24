@@ -100,30 +100,30 @@ export default function Contact() {
 
         <div className="contact-trust">
 
-          <span>✓ CIPC Registered</span>
+          <span>CIPC Registered</span>
 
-          <span>✓ CSD Registered</span>
+          <span>CSD Registered</span>
 
-          <span>✓ B-BBEE Compliant</span>
+          <span>B-BBEE Compliant</span>
 
-          <span>✓ SARS Tax Compliant</span>
+          <span>SARS Tax Compliant</span>
 
         </div>
 
         <div className="contact-info-grid">
 
           <div className="contact-info-card">
-            <h3>📍 Location</h3>
+            <h3>Location</h3>
             <p>Johannesburg, South Africa</p>
           </div>
 
           <div className="contact-info-card">
-            <h3>⚡ Response Time</h3>
-            <p>Within 24–48 Hours</p>
+            <h3>Response Time</h3>
+            <p>Within two business days</p>
           </div>
 
           <div className="contact-info-card">
-            <h3>💼 Services</h3>
+            <h3>Services</h3>
             <p>Web, Software, AI & Cloud Solutions</p>
           </div>
 
@@ -136,7 +136,7 @@ export default function Contact() {
           <div className="why-grid">
 
             <div className="why-card">
-              <h3>⚡ Fast Communication</h3>
+              <h3>Clear Communication</h3>
               <p>
                 Clear communication and quick responses
                 throughout every project.
@@ -144,7 +144,7 @@ export default function Contact() {
             </div>
 
             <div className="why-card">
-              <h3>💡 Tailored Solutions</h3>
+              <h3>Tailored Solutions</h3>
               <p>
                 Every solution is customised to your
                 business requirements.
@@ -152,7 +152,7 @@ export default function Contact() {
             </div>
 
             <div className="why-card">
-              <h3>🤝 Long-Term Partnership</h3>
+              <h3>Long-Term Partnership</h3>
               <p>
                 We focus on building technology that
                 supports sustainable growth.
@@ -214,7 +214,7 @@ export default function Contact() {
           <button type="submit" className="btn" disabled={loading}>
             {loading ? (
               <span className="loading-spinner">
-                <span className="spinner" /> Sending…
+                <span className="spinner" /> Sending...
               </span>
             ) : (
               "Send Message"
@@ -228,7 +228,7 @@ export default function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Open Prefilled Google Form
+          Use Our Service Inquiry Form
         </a>
 
         {/* <TestEmail /> */}
