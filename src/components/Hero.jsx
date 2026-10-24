@@ -72,10 +72,10 @@ export default function Hero() {
         </div>
 
         <div className="hero-trust">
-          <span>✓ CIPC Registered</span>
-          <span>✓ CSD Registered</span>
-          <span>✓ B-BBEE Compliant</span>
-          <span>✓ SARS Tax Compliant</span>
+          <span>CIPC Registered</span>
+          <span>CSD Registered</span>
+          <span>B-BBEE Compliant</span>
+          <span>SARS Tax Compliant</span>
         </div>
 
         <div className="hero-stats">
